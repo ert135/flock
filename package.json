@@ -18,12 +18,14 @@
   },
   "homepage": "https://github.com/ert135/flock#readme",
   "dependencies": {
-    "@types/ramda": "^0.24.18",
-    "awesome-typescript-loader": "^3.2.1",
     "p5": "^0.5.11",
     "ramda": "^0.25.0",
+    "typescript": "^2.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.6.1",
     "source-map-loader": "^0.2.1",
-    "typescript": "^2.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "awesome-typescript-loader": "^3.2.1",
+    "@types/ramda": "^0.24.18"
   }
 }
