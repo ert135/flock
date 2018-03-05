@@ -1,4 +1,4 @@
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
     entry: "./src/draw.ts",
@@ -7,7 +7,7 @@ module.exports = {
         path: __dirname + "/dist"
     },
     plugins: [
-        new UglifyJsPlugin()
+        // new UglifyJsPlugin()
     ],
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
