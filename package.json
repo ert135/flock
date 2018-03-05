@@ -1,0 +1,29 @@
+{
+  "name": "flock",
+  "version": "1.0.0",
+  "description": "Flock Algorthim in typescirpt and p5",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@https://github.com/ert135/flock.git"
+  },
+  "author": "Robert Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ert135/flock/issues"
+  },
+  "homepage": "https://github.com/ert135/flock#readme",
+  "dependencies": {
+    "@types/ramda": "^0.24.18",
+    "awesome-typescript-loader": "^3.2.1",
+    "p5": "^0.5.11",
+    "ramda": "^0.25.0",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
