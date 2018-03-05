@@ -23,9 +23,11 @@
     "typescript": "^2.4.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.6.1",
+    "@types/ramda": "^0.24.18",
+    "awesome-typescript-loader": "^3.5.0",
     "source-map-loader": "^0.2.1",
-    "awesome-typescript-loader": "^3.2.1",
-    "@types/ramda": "^0.24.18"
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack-dev-server": "^2.6.1",
+    "webpack": "^3.11.0"
   }
 }

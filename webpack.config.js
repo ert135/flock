@@ -1,13 +1,19 @@
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
 module.exports = {
-    entry: "./src/draw.js",
+    entry: "./src/draw.ts",
     output: {
         filename: "bundle.js",
         path: __dirname + "/dist"
     },
-
+    plugins: [
+        new UglifyJsPlugin()
+    ],
+    // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
     resolve: {
+        // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".json"]
     },
 
