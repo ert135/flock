@@ -5,7 +5,7 @@ export default class Boid {
     private velocity: p5.Vector;
     private location: p5.Vector;
     private maxSpeed: number = 5;
-    private maxForce: number;
+    private maxForce: number = 0.1;
     private target: p5.Vector;
     private radius: number = 5;
 
@@ -17,7 +17,6 @@ export default class Boid {
     }
 
     public setTarget(target: p5.Vector): void {
-        console.log('New target is ', target);
         this.target = target.copy();
     }
 
@@ -44,7 +43,6 @@ export default class Boid {
     }
 
     public display() {
-        console.log(this.velocity);
         var theta = this.velocity.heading() + radians(90);
         fill(127);
         stroke(200);
