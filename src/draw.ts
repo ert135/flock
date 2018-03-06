@@ -17,21 +17,30 @@ declare global {
 let boid: Boid;
 let target: p5.Vector;
 let desired: p5.Vector;
+let startPosition: p5.Vector;
+
+let standardVelocity = new p5.Vector(0.1, 0.1)
 
 let setup = function() {
     target = new p5.Vector(400,400);
-    const canvas = createCanvas(800, 800);
+    startPosition = new p5.Vector(height/2, width/2);
+    const canvas = createCanvas(1920, 500);
     canvas.parent(document.getElementById('canvas-target'));
-    boid = new Boid();
     desired = new p5.Vector(400, 300);
+    boid = new Boid(startPosition, standardVelocity, desired);
 }
 
 let draw = function() {
     clear();
     ellipse(target.x, target.y, 30, 30);
+    boid.seek(target);
+    boid.move();
+    boid.display();
 }
 
 let mouseClicked = function() {
+    let newTargetVector = new p5.Vector(mouseX, mouseY);
+    boid.setTarget(newTargetVector);
     target.x = mouseX;
     target.y = mouseY;
     console.log('Target is now ', target);

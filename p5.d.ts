@@ -2198,7 +2198,7 @@ declare namespace p5 {
   
   // src/math/p5.Vector.js
   
-  class Vector {
+  export class Vector {
     /**
      * A class to describe a two or three dimensional vector, specifically
      * a Euclidean (also known as geometric) vector.
@@ -2223,7 +2223,8 @@ declare namespace p5 {
      * Returns a string representation of a vector v by calling String(v)
      * or v.toString().
      */
-    toString(): void
+
+    toString(): void;
     
     /**
      * Sets the x, y, and z component of the vector using two or three separate
@@ -2246,6 +2247,8 @@ declare namespace p5 {
      * Subtracts x, y, and z components from a vector, subtracts one vector from
      * another, or subtracts two independent vectors.
      */
+    
+    static sub(v1: p5.Vector, p2: p5.Vector): any;
     sub(x: number|p5.Vector|any[], y?: number, z?: number): p5.Vector
     
     /**

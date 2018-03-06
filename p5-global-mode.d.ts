@@ -13,10 +13,14 @@ declare function mult(vec1: p5.Vector, vec2: p5.Vector): p5.Vector;
  */
 declare function plane(width: number, height: number): p5;
 
+declare function plane(width: number, height: number): p5;
+
 /**
- * Draw a sphere with given raduis
+ * Begin shape funcs
  */
-declare function sphere(radius: number, detail?: number): void;
+declare function beginShape(): void;
+declare function endShape(close: any): void;
+
 
 /**
  * Draw an ellipsoid with given radius
